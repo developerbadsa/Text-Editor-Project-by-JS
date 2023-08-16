@@ -1,5 +1,8 @@
 
 // font changer
+const fontChange = document.getElementById('fontChanger');
+
+
 
 const fontBold = document.getElementById('fontBold');
 const fontItalic = document.getElementById('fontItalic');
@@ -26,15 +29,25 @@ function fontChanger(target){
 
 
 
+// font changer
+let ddfdfdf =fontChange.childNodes;
 
-fontBold.addEventListener('click',function(){
-    fontChanger(this)
-});
-fontItalic.addEventListener('click',function(){
-    fontChanger(this)
-});
-fontUnderline.addEventListener('click',function(){
-    fontChanger(this)
-});
+
+for(let i = 0; i <  ddfdfdf.length; i++){
+    // fontBold.addEventListener('click',function(){
+    //     fontChanger(this)
+    // });
+    // fontItalic.addEventListener('click',function(){
+    //     fontChanger(this)
+    // });
+    // fontUnderline.addEventListener('click',function(){
+    //     fontChanger(this)
+    // });
+    let ddf = ddfdfdf[i].;
+    console.log(ddf)
+
+}
+
+
 
 
