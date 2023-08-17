@@ -1,29 +1,8 @@
-
-// font changer
-const fontChange = document.getElementById('fontChanger');
-
-
 // select font changer elements
-const fontBold = document.getElementById('fontBold');
-const fontItalic = document.getElementById('fontItalic');
-const fontUnderline = document.getElementById('fontUnderline');
 const inputText = document.getElementById('inputText');
-
-// Select alignment elements
-const alignLeft = document.getElementById('alignLeft');
-const alignJustify = document.getElementById('alignJustify');
-const alignCenter = document.getElementById('alignCenter');
-const alignRight = document.getElementById('alignRight');
-
-//select Font size and color
-const fontSize = document.getElementById('fontSize');
-
-
 
 
 function fontChanger(target){
-
-    const inputText = document.getElementById('inputText');
 
     switch(target.id){
         case 'fontBold': inputText.style.fontWeight = 'bold'
@@ -48,7 +27,6 @@ function fontChanger(target){
 
 // for change color
 function changeColor(target){
-    const inputText = document.getElementById('inputText');
     
 const fontColor = document.getElementById('fontColor');
     inputText.style.color = fontColor.value
@@ -61,39 +39,41 @@ const fontColor = document.getElementById('fontColor');
     }
 }
 
-//inputText.style.fontSize = target.value
+
+//select Font size and color
+const fontSize = document.getElementById('fontSize');
+
 
 // font changer
-    fontBold.addEventListener('click',function(){
+document.getElementById('fontBold').addEventListener('click',function(){
         fontChanger(this)
     });
-    fontItalic.addEventListener('click',function(){
+document.getElementById('fontItalic').addEventListener('click',function(){
         fontChanger(this)
     });
-    fontUnderline.addEventListener('click',function(){
-        fontChanger(this)
-    });
-
-    // allignment center
-    alignLeft.addEventListener('click', function(){
-        fontChanger(this)
-    });
-    alignJustify.addEventListener('click', function(){
-        fontChanger(this)
-    });
-    alignCenter.addEventListener('click', function(){
-        fontChanger(this)
-    });
-    alignRight.addEventListener('click', function(){
+document.getElementById('fontUnderline').addEventListener('click',function(){
         fontChanger(this)
     });
 
 
+    // allignment
+document.getElementById('alignLeft').addEventListener('click', function(){
+        fontChanger(this)
+    });
+document.getElementById('alignJustify').addEventListener('click', function(){
+        fontChanger(this)
+    });
+document.getElementById('alignCenter').addEventListener('click', function(){
+        fontChanger(this)
+    });
+document.getElementById('alignRight').addEventListener('click', function(){
+        fontChanger(this)
+    });
 
+
+// font size and color elements
     fontColor.addEventListener('input', function(){
         changeColor(this)
-        const fontColor = document.getElementById('fontColor');
-        console.log(fontColor.value)
     });
     fontSize.addEventListener('input', function(){
         changeColor(this)
